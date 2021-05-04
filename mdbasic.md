@@ -493,3 +493,82 @@ The rendered output looks like this:
 <br>
 
 ___
+<br>
+
+## **Horizontal Rules**
+### To create a horizontal rule, use three or more asterisks (***), dashes (---), or underscores (___) on a line by themselves.
+```
+***
+
+---
+
+_________________
+```
+### The rendered output of all three looks identical:
+<br>
+
+___
+<br>
+
+## **Horizontal Rule Best Practices**
+### For compatibility, put blank lines before and after horizontal rules.
+|✅ DO this|❌Don't do this|
+|:--|:--|
+|Try to put a blank line before...<br><br>---<br><br>...and after a horizontal rule.|Without blank lines, this would be a heading.<br>---<br>Don't do this!
+<br>
+
+___
+<br>
+
+## **Links**
+### To create a link, enclose the link text in brackets (e.g., [Duck Duck Go]) and then follow it immediately with the URL in parentheses (e.g., (https://duckduckgo.com)).
+```
+My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+```
+### The rendered output looks like this:
+My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+<br>
+
+___
+<br>
+
+## **Adding Titles**
+### You can optionally add a title for a link. This will appear as a tooltip when the user hovers over the link. To add a title, enclose it in parentheses after the URL.
+```
+My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").
+```
+### The rendered output looks like this:
+My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").
+<br>
+
+___
+<br>
+
+## **URLs and Email Addresses**
+### To quickly turn a URL or email address into a link, enclose it in angle brackets.
+```
+<https://www.markdownguide.org>
+<fake@example.com>
+```
+### The rendered output looks like this:
+<https://www.markdownguide.org><br>
+<fake@example.com>
+<br>
+
+___
+<br>
+
+## **Formatting Links**
+### To emphasize links, add asterisks before and after the brackets and parentheses. To denote links as code, add backticks in the brackets.
+```
+I love supporting the **[EFF](https://eff.org)**.
+This is the *[Markdown Guide](https://www.markdownguide.org)*.
+See the section on [`code`](#code).
+```
+### The rendered output looks like this:
+I love supporting the **[EFF](https://eff.org)**.<br>
+This is the *[Markdown Guide](https://www.markdownguide.org)*.<br>
+See the section on [`code`](#code).
+<br>
+
+___
