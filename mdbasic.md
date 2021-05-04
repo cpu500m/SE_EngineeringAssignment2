@@ -375,3 +375,121 @@ ___
 <br>
 
 ___
+<br>
+
+## **Code Blocks**
+### Code blocks are normally indented four spaces or one tab. When they’re in a list, indent them eight spaces or two tabs.
+```
+1.  Open the file.
+2.  Find the following code block on line 21:
+
+        <html>
+          <head>
+            <title>Test</title>
+          </head>
+
+3.  Update the title to match the name of your website.
+```
+<br>
+
+### The rendered output looks like this:
+1.  Open the file.
+2.  Find the following code block on line 21:
+
+        <html>
+          <head>
+            <title>Test</title>
+          </head>
+
+3.  Update the title to match the name of your website.
+
+<br>
+
+___
+<br>
+
+## **Images**
+```
+1. print Linux mascot
+2. 
+    ![Tux, the Linux mascot](https://d33wubrfki0l68.cloudfront.net/e7ed9fe4bafe46e275c807d63591f85f9ab246ba/e2d28/assets/images/tux.png)
+
+3.  Good!
+```
+### The rendered output looks like this:
+1. print Linux mascot
+2.
+    ![Tux, the Linux mascot](https://d33wubrfki0l68.cloudfront.net/e7ed9fe4bafe46e275c807d63591f85f9ab246ba/e2d28/assets/images/tux.png)
+
+3. Good!
+
+<br>
+
+___
+<br>
+
+## **lists**
+### You can nest an unordered list in an ordered list, or vice versa.
+```
+1. First item
+2. Second item
+3. Third item
+    - Indented item
+    - Indented item
+4. Fourth item
+```
+### The rendered output looks like this:
+1. First item
+2. Second item
+3. Third item
+    - Indented item
+    - Indented item
+4. Fourth item
+<br>
+
+___
+<br>
+
+## **Code**
+### To denote a word or phrase as code, enclose it in backticks (`).
+|Markdown|HTML|Rendered Output|
+|:--|:--|:--|
+|At the command prompt, type \`nano\`.|At the command prompt, type \<code>nano\</code>.|At the command prompt, type `nano`.
+
+<br>
+
+___
+<br>
+
+## **Escaping Backticks**
+### If the word or phrase you want to denote as code includes one or more backticks, you can escape it by enclosing the word or phrase in double backticks (``).
+|Markdown|HTML|Rendered Output|
+|:--|:--|:--|
+|\`\`Use \`code\` in your Markdown file.\``|\<code>Use \`code\` in your Markdown file.\</code>|``Use `code` in your Markdown file.``
+
+<br>
+
+___
+<br>
+
+## **Code Blocks**
+### To create code blocks, indent every line of the block by at least four spaces or one tab.
+```
+ <html>
+      <head>
+      </head>
+    </html>
+```
+The rendered output looks like this:
+```
+<html>
+  <head>
+  </head>
+</html>
+```
+```
+! Note: To create code blocks without indenting lines, use fenced code blocks.
+```
+<br>
+
+___
