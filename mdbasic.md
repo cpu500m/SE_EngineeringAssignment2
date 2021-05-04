@@ -572,3 +572,181 @@ See the section on [`code`](#code).
 <br>
 
 ___
+<br>
+
+# ***Reference-style Links***
+### Reference-style links are a special kind of link that make URLs easier to display and read in Markdown. Reference-style links are constructed in two parts: the part you keep inline with your text and the part you store somewhere else in the file to keep the text easy to read.
+<br>
+
+## **Formatting the First Part of the Link**
+### The first part of a reference-style link is formatted with two sets of brackets. The first set of brackets surrounds the text that should appear linked. The second set of brackets displays a label used to point to the link you’re storing elsewhere in your document.
+<br>
+
+### Although not required, you can include a space between the first and second set of brackets. The label in the second set of brackets is not case sensitive and can include letters, numbers, spaces, or punctuation.
+<br>
+
+### This means the following example formats are roughly equivalent for the first part of the link:
+- [hobbit-hole][1]
+- [hobbit-hole] [1]
+<br>
+
+___
+<br>
+
+## **Formatting the Second Part of the Link**
+### The second part of a reference-style link is formatted with the following attributes:
+<br>
+
+1.The label, in brackets, followed immediately by a colon and at least one space (e.g., [label]: ).
+
+2.The URL for the link, which you can optionally enclose in angle brackets.
+
+3.The optional title for the link, which you can enclose in double quotes, single quotes, or parentheses.
+<br>
+
+### This means the following example formats are all roughly equivalent for the second part of the link:
+
+- \[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle
+- \[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles"
+- \[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle 'Hobbit lifestyles'
+- \[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle (Hobbit lifestyles)
+- \[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> "Hobbit lifestyles"
+- \[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> 'Hobbit lifestyles'
+- \[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> (Hobbit lifestyles)
+<br>
+
+### You can place this second part of the link anywhere in your Markdown document. Some people place them immediately after the paragraph in which they appear while other people place them at the end of the document (like endnotes or footnotes).
+<br>
+
+___
+<br>
+
+## **An Example Putting the Parts Together**
+### Say you add a URL as a standard URL link to a paragraph and it looks like this in Markdown:
+```
+In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends
+of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to
+eat: it was a [hobbit-hole](https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles"), and that means comfort.
+```
+### Though it may point to interesting additional information, the URL as displayed really doesn’t add much to the existing raw text other than making it harder to read. To fix that, you could format the URL like this instead:
+```
+In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends
+of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to
+eat: it was a [hobbit-hole][1], and that means comfort.
+
+[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> "Hobbit lifestyles"
+```
+### In both instances above, the rendered output would be identical:
+```
+In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort.
+```
+### and the HTML for the link would be:
+```
+<a href="https://en.wikipedia.org/wiki/Hobbit#Lifestyle" title="Hobbit lifestyles">hobbit-hole</a>
+```
+<br>
+
+___
+<br>
+
+## **Link Best Practices**
+### Markdown applications don’t agree on how to handle spaces in the middle of a URL. For compatibility, try to URL encode any spaces with %20.
+|✅ DO this|❌Don't do this|
+|:--|:--|
+|\[link](https://www.example.com/my%20great%20page)|\[link](https://www.example.com/my great page)
+<br>
+___
+<br>
+
+# ***Images***
+### To add an image, add an exclamation mark (!), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title after the URL in the parentheses.
+```
+![Philadelphia's Magic Gardens. This place was so cool!](https://d33wubrfki0l68.cloudfront.net/eab45e25bb79970178fab7a2d10cba0209372a59/94d9e/assets/images/philly-magic-garden.jpg "Philadelphia's Magic Gardens")
+```
+### The rendered output looks like this:
+![Philadelphia's Magic Gardens. This place was so cool!](https://d33wubrfki0l68.cloudfront.net/eab45e25bb79970178fab7a2d10cba0209372a59/94d9e/assets/images/philly-magic-garden.jpg "Philadelphia's Magic Gardens")
+<br>
+
+___
+<br>
+
+## **Linking Images**
+### To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.
+```
+[![An old rock in the desert](https://d33wubrfki0l68.cloudfront.net/70a143fdf134aacde3740662a2a47a2a1ee0d216/276c9/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
+```
+[![An old rock in the desert](https://d33wubrfki0l68.cloudfront.net/70a143fdf134aacde3740662a2a47a2a1ee0d216/276c9/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
+
+<br>
+
+___
+<br>
+
+# ***Escaping Characters***
+### To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (\) in front of the character.
+```
+\* Without the backslash, this would be a bullet in an unordered list.
+```
+<br>
+
+### The rendered output looks like this:
+\* Without the backslash, this would be a bullet in an unordered list.
+<br>
+
+___
+<br>
+
+## **Characters You Can Escape**
+### You can use a backslash to escape the following characters.
+|Chracter|Mame|
+|:--|:--|
+|\\ |backslash|
+|`|backtick|
+|*|asterisk|
+|_|underscore|
+|{ }|curly braces|
+|[ ]|brackets|
+|< >|angle brackets|
+|( )|parentheses|
+|#|pound sign|
+|+|plus sign|
+|-|minus sign (hyphen)|
+|.|dot|
+|!|exclamation mark|
+|\||pipe|
+<br>
+
+____
+<br>
+
+# ***HTML***
+### Many Markdown applications allow you to use HTML tags in Markdown-formatted text. This is helpful if you prefer certain HTML tags to Markdown syntax. For example, some people find it easier to use HTML tags for images. Using HTML is also helpful when you need to change the attributes of an element, like specifying the color of text or changing the width of an image.
+<br>
+
+### To use HTML, place the tags in the text of your Markdown-formatted file.
+```
+This **word** is bold. This <em>word</em> is italic.
+```
+### The rendered output looks like this:
+This **word** is bold. This <em>word</em> is italic.
+<br>
+
+___
+<br>
+
+## **HTML Best Practices**
+
+### For security reasons, not all Markdown applications support HTML in Markdown documents. When in doubt, check your Markdown application’s documentation. Some applications support only a subset of HTML tags.
+<br>
+
+### Use blank lines to separate block-level HTML elements like \<div>, \<table>, \<pre>, and \<p> from the surrounding content. Try not to indent the tags with tabs or spaces — that can interfere with the formatting.
+<br>
+
+### You can’t use Markdown syntax inside block-level HTML tags. For example, \<p>italic and \*\*bold**\</p> won’t work.
+
+# Github flavored markdown
+https://github.com/cpu500m/gfm_assignment/commit/d415942ad4668013b9e8582a99cd15e12a4ad86d?short_path=b335630#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5
+
+
+
+
