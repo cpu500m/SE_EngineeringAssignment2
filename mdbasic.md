@@ -163,3 +163,215 @@ ___
 <br>
 
 ___
+<br>
+
+## **Bold and Italic Best Practices**
+### Markdown applications don’t agree on how to handle underscores in the middle of a word. For compatibility, use asterisks to bold and italicize the middle of a word for emphasis.
+|✅ DO this|❌Don't do this|
+|:--|:--|
+|<h2>This is really\*\*\*very***important text.|<h2>This is really___very___important text.
+
+<br>
+
+___
+<br>
+
+# ***Blockquotes***
+### To create a blockquote, add a > in front of a paragraph.
+<br>
+
+```
+ \>Dorothy followed her through many of the beautiful rooms in her castle.
+ ```
+<br>
+
+### The rendered output looks like this:
+<br>
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+
+<br>
+
+___
+<br>
+
+
+## **Blockquotes with Multiple Paragraphs**
+### Blockquotes can contain multiple paragraphs. Add a > on the blank lines between the paragraphs.
+<br>
+
+```
+\> Dorothy followed her through many of the beautiful rooms in her castle.<br>
+\><br>
+\> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+```
+<br>
+
+### The rendered output looks like this:
+<br>
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
+<br>
+
+___
+
+<br>
+
+## **Nested Blockquotes**
+### Blockquotes can be nested. Add a >> in front of the paragraph you want to nest.
+<br>
+
+```
+\> Dorothy followed her through many of the beautiful rooms in her castle.<br>
+\><br>
+\>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+```
+<br>
+
+### The rendered output looks like this:
+<br>
+
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
+<br>
+
+___
+<br>
+
+## **Blockquotes with Other Elements**
+### Blockquotes can contain other Markdown formatted elements. Not all elements can be used — you’ll need to experiment to see which ones work.
+<br>
+
+```
+\> #### The quarterly results look great!<br>
+\><br>
+\> - Revenue was off the chart.<br>
+\> - Profits were higher than ever.<br>
+\><br>
+\>  \*Everything* is going according to \*\*plan**.
+```
+<br>
+
+### The rendered output looks like this:
+<br>
+
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.
+
+<br>
+
+___
+<br>
+
+# ***Lists***
+### You can organize items into ordered and unordered lists.
+<br>
+
+
+## **Ordered Lists**
+### To create an ordered list, add line items with numbers followed by periods. **The numbers don’t have to be in numerical order, but the list should start with the number one.**
+|Markdown|HTML|Rendered Output|
+|:--|:--|:--|
+|1. First item<br>2. Second item<br>3. Third item<br>4. Fourth item|\<ol><br>\<li>First item\</li><br>\<li>Second item\</li><br>\<li>Third item\</li><br>\<li>Fourth item\</li><br>\</ol>|1. First item<br>2. Second item<br>3. Third item<br>4. Fourth item|\<ol><br>\<li>First item
+
+<br>
+
+___
+<br>
+
+## **Ordered List Best Practices**
+### CommonMark and a few other lightweight markup languages let you use a parenthesis ()) as a delimiter (e.g., 1) First item), but not all Markdown applications support this, so it isn’t a great option from a compatibility perspective. For compatibility, use periods only.
+|✅ DO this|❌Don't do this|
+|:--|:--|
+|<H2>1. First item<br>2. Second item|<h2>1) First item<br>2) Second item
+
+<br>
+
+
+___
+<br>
+
+## **Unordered Lists**
+### To create an unordered list, **add dashes (-), asterisks (*), or plus signs (+) in front of line items. Indent one or more items to create a nested list.**
+|Markdown|HTML|Rendered Output|
+|:--|:--|:--|
+|- First item<br>- Second item<br>- Third item<br>- Fourth item|\<ul><br>\<li>First item\</li><br>\<li>Second item\</li><br>\<li>Third item\</li><br>\<li>Fourth item\</li><br>\</ul>|<li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li>
+
+<br>
+
+___
+<br>
+
+## **Unordered List Best Practices**
+### Markdown applications don’t agree on how to handle different delimiters in the same list. For compatibility, don’t mix and match delimiters in the same list — pick one and stick with it.
+|✅ DO this|❌Don't do this|
+|:--|:--|
+|<h2>- First item<br>- Second item<br>- Third item<br>- Fourth item|<h2>+ First item<br>* Second item<br>- Third item<br>+ Fourth item
+
+<br>
+
+___
+<br>
+
+## **Adding Elements in Lists**
+### To add another element in a list while preserving the continuity of the list, indent the element four spaces or one tab, as shown in the following examples.
+<br>
+
+### **Paragraphs**
+```
+*   This is the first list item.
+*   Here's the second list item.
+
+    I need to add another paragraph below the second list item.
+
+*   And here's the third list item. 
+```
+<br>
+
+ ### The rendered output looks like this:
+
+*   This is the first list item.
+*   Here's the second list item.
+
+    I need to add another paragraph below the second list item.
+
+*   And here's the third list item.
+
+<br>
+
+  ___
+<br>
+
+## **Blockquotes**
+```
+*   This is the first list item.
+*   Here's the second list item.
+
+    > A blockquote would look great below the second list item.
+
+*   And here's the third list item.
+```
+<br>
+
+### The rendered output looks like this:
+
+*   This is the first list item.
+*   Here's the second list item.
+
+    > A blockquote would look great below the second list item.
+
+*   And here's the third list item.
+
+<br>
+
+___
