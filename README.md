@@ -7,7 +7,7 @@ ___
 ![init과 config](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/init%EA%B3%BC%20config%EB%A1%9C%20%EB%93%B1%EB%A1%9D..PNG?raw=true)
 
 ### 이때 사용된 명령어 :
-* init : 현재 작업중인 폴더가 git의 관리하에 있게 함.
+* [init](https://github.com/cpu500m/SE_EngineeringAssignment2/edit/main/README.md) : 현재 작업중인 폴더가 git의 관리하에 있게 함.
 #### 사용법 :
 ```
 git의 관리 하에 둘 폴더 내에 들어가서 
@@ -169,4 +169,4 @@ git의 관리 하에 둘 폴더 내에 들어가서
 
 |명령어|링크|
 |:--|:--|
-|add|[`add`](#add)
+|init|[init](#init)
