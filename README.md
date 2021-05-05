@@ -6,8 +6,8 @@ ___
 
 ![init과 config](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/init%EA%B3%BC%20config%EB%A1%9C%20%EB%93%B1%EB%A1%9D..PNG?raw=true)
 
-### 이때 사용된 명령어 :
-* [init](#init) : 현재 작업중인 폴더가 git의 관리하에 있게 함.
+## init :
+* 현재 작업중인 폴더가 git의 관리하에 있게 함.
 #### 사용법 :
 ```
 git의 관리 하에 둘 폴더 내에 들어가서 
@@ -15,7 +15,8 @@ git의 관리 하에 둘 폴더 내에 들어가서
 ```
 <br>
 
-* config : 본인의 메일과 이름등을 출력할 수 있는 명령어. 
+## config :
+* 본인의 메일과 이름등을 출력할 수 있는 명령어. 
     > --global:  유저이름이나 이메일등 작성자의 정보를 저장.
  ### 사용법 :
  ```
@@ -29,13 +30,14 @@ git의 관리 하에 둘 폴더 내에 들어가서
 ## **관리하에 둔 폴더내에서 작업을 어느정도 진행했다면 , 현재상태를 언제든 꺼낼 수 있는 타임캡슐같은 공간에 저장하기 위한 명령어 사용.**
 ![status](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/status%20%EC%B2%AB%EB%B2%88%EC%A7%B8.PNG?raw=true)
 ![Add](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/Add%EC%82%AC%EC%9A%A9.PNG?raw=true)
-### 이때 사용된 명령어 :
-* status : 현재 상태를 출력함.
+## status :
+* 현재 상태를 출력함.
  ### 사용법 :
  ```
     git status
  ```  
-* add : 현재 상태에서 타입캡슐에 추가되지 않은 내용을 캡슐에 넣음.
+## add :
+* 현재 상태에서 타입캡슐에 추가되지 않은 내용을 캡슐에 넣음.
     > -A : 인덱스가 이미 엔트리를 가지는것까지 모두 올림.
  ### 사용법 :
  ```
@@ -43,15 +45,16 @@ git의 관리 하에 둘 폴더 내에 들어가서
  ```
  ## **캡슐안에 내용들을 저장했다면 언제든지 꺼낼수 있도록 일단 묻어놔야함. 캡슐을 묻는 명령과 현재 묻혀있는 캡슐을 보여주는 명령어를 실행해봄.**
  ![commit과 log](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/commit%EA%B3%BC%20log.PNG?raw=true)
- ### 이때 사용된 명령어:
- * commit : 정보가 들어있는 캡슐을 묻음.
+ ## commit :
+ *  정보가 들어있는 캡슐을 묻음.
     >-m : 묻을 캡슐에 대한 설명을 추가함.
 ### 사용법 :
  ```
     git commit 
     git commit -m "부가 설명"
  ```
-* log : 지금껏 묻은 타입캡슐들을 보여줌.
+## log :
+* 지금껏 묻은 타입캡슐들을 보여줌.
     > --all: 묻힌 캡슐들을 모두 보여준다.
 ### 사용법 :
  ```
@@ -62,8 +65,8 @@ git의 관리 하에 둘 폴더 내에 들어가서
 ![변경 첫번째](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/%EB%82%B4%EC%9A%A9%EB%B3%80%EA%B2%BD%EC%B2%AB%EB%B2%88%EC%A7%B8..PNG?raw=true))
 ![reset](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/reset%EC%9C%BC%EB%A1%9C%20%EB%8F%8C%EB%A6%BC..PNG?raw=true)
 
-### 이때 사용된 명령어:
-* reset : 과거에 캡슐을 저장해놨던 시점으로 돌아감.
+## reset :
+* 과거에 캡슐을 저장해놨던 시점으로 돌아감.
     > --hard :돌아간 시점 이후를 모두 잊음.(다시 못돌아감)
  ### 사용법 :
  ```
@@ -73,8 +76,8 @@ git의 관리 하에 둘 폴더 내에 들어가서
 ![NewTry생성](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/NewTry%EC%83%9D%EC%84%B1.PNG?raw=true)
 ![checkout으로넘어감](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/checkout%EC%9C%BC%EB%A1%9C%20%EB%84%98%EC%96%B4%EA%B0%90.PNG?raw=true)
 
-### 이때 사용된 명령어:
-* branch : 기존의 내용을 그대로 담고있는 새로운 평행우주 생성, 나무에서 나뭇가지가 여러갈래로 뻗어가듯 그런거라 보면됨.
+## branch :
+* 기존의 내용을 그대로 담고있는 새로운 평행우주 생성, 나무에서 나뭇가지가 여러갈래로 뻗어가듯 그런거라 보면됨.
     >-a: 로컬에서의 브랜치뿐만아니라 원격저장소의 브랜치까지 보여줌.<br>
     >-M : 브랜치 이름변경.<br>
     >-D : 브랜치 삭제.
@@ -84,7 +87,8 @@ git의 관리 하에 둘 폴더 내에 들어가서
     git branch  //현재 존재하는 브랜치들을 보여준다.
     git branch -D "브랜치명"
 ```
-* checkout : 다른 브랜치로 넘어감.
+## checkout :
+* 다른 브랜치로 넘어감.
     > -b:브랜치를 만들고 넘어감.<br>
 ### 사용법 :
 ```
@@ -94,8 +98,8 @@ git의 관리 하에 둘 폴더 내에 들어가서
 
 ![merge](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/NewTry%EC%97%90%EC%84%9C%20%EC%83%88%EB%A1%9C%EC%9A%B4%20%EC%BA%A1%EC%8A%90%EC%83%9D%EC%84%B1,%20merge%EA%B9%8C%EC%A7%80.PNG?raw=true)
 
-### 이때 사용된 명령어:
-* merge :  다른 평행우주에서 내용을 가져와 통합. 
+## merge
+* 다른 평행우주에서 내용을 가져와 통합. 
 ### 사용법 :
  ```
     git merge "통합할브랜치이름"
@@ -104,8 +108,8 @@ git의 관리 하에 둘 폴더 내에 들어가서
 ![되돌림](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/rebase%EB%A5%BC%EC%93%B0%EA%B8%B0%EC%9C%84%ED%95%B4%20%EB%90%98%EB%8F%8C%EB%A6%BC..PNG?raw=true)
 ![rebase](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/rebase%20%EC%82%AC%EC%9A%A9.PNG?raw=true)
 
-### 이때 사용된 명령어:
-* rebase :  다른 평행우주에서 내용을 가져와 통합.(변경을 한줄로 정리) 
+## rebase :
+* 다른 평행우주에서 내용을 가져와 통합.(변경을 한줄로 정리) 
 ### 사용법 :
  ```
     git rebase "통합할브랜치이름"
@@ -113,14 +117,15 @@ git의 관리 하에 둘 폴더 내에 들어가서
 ## **작업을 어느정도 하고보니 이젠 다른사람들과 코드를 공유하면서 같이 작업하고싶음.**
 ![remote와push](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/remote%EC%99%80%20push.PNG?raw=true)
 
-### 이때 사용된 명령어:
-* remote : 현 폴더의 원격 레파지토리를 확인함 
+## remote : 
+* 현 폴더의 원격 레파지토리를 확인함 
 ### 사용법 :
  ```
     git remote //연결된 원격저장소 확인
     git remote add "원격레파지토리이름" "주소"//주소에 해당하는 곳에 레파지토리이름 으로 저장.
 ```
-* push : 로컬저장소(현재 작업하고있는 폴더)의 내용을 원격 저장소(github)에 올림.
+## push :
+* 로컬저장소(현재 작업하고있는 폴더)의 내용을 원격 저장소(github)에 올림.
 ### 사용법 :
  ```
     git push
@@ -129,8 +134,8 @@ git의 관리 하에 둘 폴더 내에 들어가서
 
 ![clone](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/clone%EB%A1%9C%20%EC%BD%94%EB%93%9C%EB%82%B4%EB%A0%A4%EB%B0%9B%EA%B8%B0.PNG?raw=true)
 
-### 이때 사용된 명령어:
-* clone :  원격저장소에 있는 코드를 내려받음.
+## clone : 
+* 원격저장소에 있는 코드를 내려받음.
 ### 사용법 :
  ```
     git clone "URL"(주소)
@@ -140,13 +145,14 @@ git의 관리 하에 둘 폴더 내에 들어가서
 ## **다시 A컴퓨터로 돌아와서 작업을 진행하려하는데, B에서 진행해 놓은것이 있기때문에 업데이트 후 진행해야 함.**
 ![pull](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/pull%EB%A1%9C%20%EC%BD%94%EB%93%9C%20%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8.PNG?raw=true)
 
-### 이때 사용된 명령어:
-* fetch : 원격저장소의 상황을 최신 상황으로 업데이트 함.
+## fetch :
+* 원격저장소의 상황을 최신 상황으로 업데이트 함.
 ### 사용법 :
  ```
     git fetch
 ```
-* pull : 로컬저장소의 코드를 원격저장소의 내용으로 업데이트 함.
+## pull :
+*  로컬저장소의 코드를 원격저장소의 내용으로 업데이트 함.
 ### 사용법 :
  ```
     git pull 원격명 브랜치명
@@ -159,14 +165,29 @@ git의 관리 하에 둘 폴더 내에 들어가서
 
 ![tag](https://github.com/cpu500m/SE_EngineeringAssignment2/blob/main/images/tag%20%EC%98%AC%EB%A6%AC%EA%B8%B0.PNG?raw=true)
 
-### 이때 사용된 명령어:
-* tag : 현재 버전을 저장. 
+## tag : 
+* 현재 버전을 저장. 
 ### 사용법 :
  ```
     git tag "tag이름"
     git push 원격명 태그명 // 태그를 원격저장소에 올림.
 ```
 
-|명령어|링크|
+|명령어|사용여부|
 |:--|:--|
-|init|[init](#init)
+|[add](#add-)|O
+|[branch](#branch-)|O
+|[checkout](#checkout-)|O
+|[clone](#clone-)|O
+|[commit](#commit-)|O
+|[config](#config-)|O
+|[init](#init-)|O
+|[log](#log-)|O
+|[merge](#merge)|O
+|[pull](#pull-)|O
+|[push](#push-)|O
+|[rebase](#rebase-)|O
+|[remote](#remote-)|O
+|[reset](#reset-)|O
+|[status](#status-)|O
+|[tag](#tag-)|O
