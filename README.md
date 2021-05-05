@@ -169,4 +169,4 @@ git의 관리 하에 둘 폴더 내에 들어가서
 
 |명령어|링크|
 |:--|:--|
-|init|[init](https://github.com/cpu500m/SE_EngineeringAssignment2/edit/main/README.md#init)
+|init|[init](#init)
